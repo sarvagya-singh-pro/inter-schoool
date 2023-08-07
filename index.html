@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.5.0/Tween.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.js" integrity="sha512-JC/KiiKXoc40I1lqZUnoRQr96y5/q4Wxrq5w+WKqbg/6Aq0ivpS2oZ24x/aEtTRwxahZ/KOApxy8BSZOeLXMiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script defer src="./index.js"> </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<!-- unpkg -->
+<script src="https://unpkg.com/@barba/core"></script>
+
+<!-- jsdelivr -->
+<script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+<script defer src="./main.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Cambay&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    
+    
+    }
+ 
+    .wave {
+      display: block;
+      z-index: 2;
+      width: 100vh;
+      animation: waveAnimation 3s linear infinite;
+    }
+    @keyframes waveAnimation {
+      0% {
+        transform: rotate(-90deg) translateX(10%) translateY(10vw);
+      }
+      50% {
+        transform: rotate(-90deg) translateX(0%) translateY(10vw);
+      }
+      100% {
+        transform:  rotate(-90deg) translateX(10%) translateY(10vw);
+      }
+    }
+  </style>
+
+  
+</head>
+<body  data-barba="wrapper" >
+  <div class="containers" data-barba="container"> 
+  <div class="landing" >
+    <nav>
+      <img src="./images//images.jpg">
+      <h2>Home</h2>
+      <h2>About</h2>
+      <h2>FAQ</h2>
+    </nav>
+    
+   
+      <h1 class="bt">Burning Truth Of The</h1>
+    <img width="200px"   height="100px" src="./images/text.svg">
+    <div class="extension">
+ 
+
+  </div>
+  <div class="svgcontainer">
+  <svg class="wave" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <!-- Your SVG wave path goes here -->
+    <path fill="#2342f1" d="M0 540 Q480 430 960 540 T1920 540 V1080 H0z" />
+  </svg>
+</div>
+<a href="./more.html">
+  <div id="overlays" class="overlay">
+    <h2 class="LearnMoreOverlay">Learn More</h2>
+
+  </div>
+  </a>
+
+  <a href="./more.html">
+  <button class="LearnMore">Learn More</button>
+</a>
+  </div>
+  <div class="informationPage">
+   <div class="info">
+    <h1 class="infoText">Heading</h1>
+    <h3>Lorem ipsum dolor sit amet. Et quaerat quod aut perspiciatis amet aut temporibus tenetur? Et dolorum perspiciatis ea dignissimos voluptas At accusamus itaque aut assumenda recusandae. Eos doloribus accusamus non modi cupiditate est facere odit ut distinctio dolorum ea cupiditate soluta qui repellat officia ab blanditiis nulla!Sed ipsa iure sit dolores dolores aut aspernatur voluptatem qui velit corporis ex quos dolores. Aut quas sint eum minus alias qui unde voluptatem a quam corrupti est accusantium numquam? Cum dignissimos repudiandae et vitae sapiente eum deleniti enim sit nihil blanditiis aut quos exercitationem et suscipit facilis ut explicabo beatae. Vel vero autem et nihil quaerat non velit autem est delectus nesciunt aut fuga dolores et corrupti suscipit qui minus asperiores.
+
+      Vel facilis esse sit sunt laudantium ut minima repellendus eos possimus omnis et magnam voluptatum in voluptates sunt non dolor optio. Ut vero molestiae ut eveniet ullam et maiores doloremque qui doloribus pariatur eos nulla dolores vel minima fuga.</h3>
+  </div>
+    <div class="imgDiv">
+    <img src="./images/pexels-umut-sarıalan-17589788.jpg" alt="" class="image">
+    <div class="shadow1">
+    </div>
+    <div class="shadow2">
+
+    </div>
+   </div>
+   
+   </div> 
+   </div>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="script.js"></script>
+    <script>
+      $(".LearnMore").mouseenter(function(){
+    
+        gsap.to('.overlay', {
+            duration: 1, width: 150, ease: Power4.easeIn}, 0.2);
+          
+            
+            
+      document.querySelector('.LearnMoreOverlay').setAttribute("style","display:block");
+       
+    }) 
+      </script>
+
+</body>
+</html>
