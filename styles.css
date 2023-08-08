@@ -101,13 +101,7 @@ body {
     transition: 500ms linear;
     transition-delay: 200ms;
   }
-  nav img{
-    
-    margin-top: 20px;
-    display: block;
-    position: absolute;
-    left: 0px;
-  }
+
   .informationPage h3{
     display: block;
     position: absolute;
@@ -118,6 +112,64 @@ body {
     color: #5a5a5a;
     width: 50%;
   }
+  .cardlist{
+    margin-top: 10rem;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  .card {
+    position: relative;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+
+
+  .content h3{
+    font-family: 'Inter', sans-serif;
+  }
+  .content img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10rem;
+  }
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    height: 5px;
+    background: linear-gradient(-45deg, #055f9b 0%, #29bbf5 100% );
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover::before {
+    height: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  
+  
   
   .infoText.animate {
     opacity: 1; 
@@ -171,11 +223,24 @@ body {
   }
   .informationPage{
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     display: block;
-    position: absolute;
+    position: relative;
+    margin-top: -20px;
     z-index: 5;
     background: #e4eff5;
+  }
+  .artHeader{
+    text-align: center;
+    font-family: 'Inria Sans', sans-serif; 
+  }
+  .articles{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: 25;
+    background: #dbe7ee;
   }
   .learnMoreHover{
     color: #fff;
@@ -186,17 +251,14 @@ body {
     transform-origin: left;
     transform: translateX(100%);
   }
-  nav img{
-    width: 50px;
-    height: 50px;
-  }
+
   nav h2{
     cursor: pointer;
     color: #303030;
     font-weight: 300;
     font-family: 'Inria Sans', sans-serif;
   }
-  nav h2:nth-child(2){
+  nav h2:nth-child(1){
     color: #2342f1 !important;
   }
   nav h2:hover{
@@ -274,8 +336,8 @@ body {
   font-size: 3rem;
   font-weight: 500;
 }
-#curve_chart{
-  margin-top: 40%;
+#chart{
+  margin-top: 20%;
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 1rem;
