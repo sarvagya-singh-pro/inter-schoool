@@ -14,8 +14,19 @@ barba.init({
     }]
   });
 
-
-  
+  const states=[0,0,0]
+  document.querySelectorAll('.regulist div').forEach((el,index)=>{
+    el.addEventListener("click",(ev)=>{
+     if(!states[index]){
+      states[index]=1
+      ev.target.children[0].classList.add("active");
+     }
+     else{
+      states[index]=0;
+      ev.target.children[0].classList.add("unactive");
+     }
+    })
+  })
   const element=document.querySelector('.infoText')
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
