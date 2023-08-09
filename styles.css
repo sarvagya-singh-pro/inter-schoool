@@ -436,6 +436,95 @@ body {
   
   transform: translate(100%,-50%);
 }
+footer{
+  display: block;
+  width: 100vw;
+  height: 20rem;
+  background: #f3f3fa;
+}
+footer h2{
+  position: absolute;
+  font-weight: 600;
+  font-family: 'Inter',sans-serif;
+  margin-left: 50px;
+  padding-top: 50px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+.social{
+  position: absolute;
+  padding-top: 0px;
+  margin-left: 30%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -110px;
+}
+.social::before{
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 1px solid rgb(46, 46, 46);
+
+}
+.contact{
+  width: 30%;
+  height: 5rem;
+  margin-left: 50%;
+  margin-top: -100px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.contact div{
+  border-radius: 0.5rem;
+  cursor: pointer;
+  height: 80%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(1, 2, 27, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  
+}
+.facebook{
+  background: #007bff;
+}
+.yt{
+  background: rgb(224, 46, 46);
+  box-shadow: rgba(27, 1, 1, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;  
+
+}
+.lin{
+  
+  background: #0072b1;
+}
+.contact div:hover{
+  transform: scale(1.1);
+}
+footer h3{
+  padding-left: 50px;
+  font-family: 'Inter',sans-serif;
+  color: #4d4d4d;
+}
+footer p{
+  width: 22%;
+  margin-left: 22%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: -50px;
+}
+.dpsLogo{
+  position: absolute;
+  display: block;
+  left: 50px;
+}
+.yt img{
+  width: 50px;
+}
 .circle img{
   width: 20vw;
   height: 20vw;
@@ -467,7 +556,7 @@ body {
  }
  @media only screen and (max-width: 1068px){
   .wave{
-    display: none;
+    opacity: 0;
   }
   nav h2{
     display: none;
