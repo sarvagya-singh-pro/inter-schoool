@@ -466,11 +466,17 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  @media only screen and (max-width: 1068px){
+  .wave{
+    display: none;
+  }
   nav h2{
     display: none;
   }
   .textImg{
     width: 600px;
+  }
+  .extension{
+    opacity: 0;
   }
   nav img{
     width: 50px;
