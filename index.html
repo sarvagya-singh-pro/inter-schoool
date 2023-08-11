@@ -76,15 +76,18 @@
   </svg>
 </div>
 <a href="./more.html">
-  <div id="overlays" class="overlay">
-    <h2 class="LearnMoreOverlay">Learn More</h2>
-
-  </div>
+ 
   </a>
 
   <a href="./more.html">
-  <button class="LearnMore">Learn More</button>
+  <div class="LearnMore">
+    <div class="hello">
+      <p class="learnMoreText">Learn More</p>
+    </div>
+
+  </div>
 </a>
+
   </div>
   <div class="informationPage">
    <div class="info">
@@ -187,18 +190,7 @@
   
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="script.js"></script>
-    <script>
-      $(".LearnMore").mouseenter(function(){
-    
-        gsap.to('.overlay', {
-            duration: 1, width: 150, ease: Power4.easeIn}, 0.2);
-          
-            
-            
-      document.querySelector('.LearnMoreOverlay').setAttribute("style","display:block");
-       
-    }) 
-      </script>
+   
 
 </body>
 </html>
