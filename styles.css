@@ -377,8 +377,8 @@ body {
     font-weight: 300;
     font-family: 'Inria Sans', sans-serif;
   }
-  nav h2:nth-child(1){
-    color: #2342f1 !important;
+  nav h2:nth-child(2){
+    color: #2342f1 ;
   }
   nav h2:hover{
     color: #26a8ee;
@@ -532,8 +532,8 @@ footer h2{
 .contact div{
   border-radius: 0.5rem;
   cursor: pointer;
-  height: 80%;
-  width: 15%;
+  height: 5vw;
+  width: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;

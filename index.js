@@ -18,6 +18,9 @@ barba.init({
   document.querySelector('.menu').addEventListener('click',()=>{
     alert("click")
   })
+  document.querySelector('.about').addEventListener("click",()=>{
+    window.location.href="about.html"
+  })
   document.querySelectorAll('.collaspable').forEach(el=>{
     el.style.display="none"
   });
