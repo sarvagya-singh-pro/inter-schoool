@@ -2,6 +2,7 @@ console.clear();
 window.addEventListener("scroll", function(){
     if(window.scrollY!=0){
     document.querySelector('.From').style.opacity=0;
+    
     }
     else{
         document.querySelector('.From').style.opacity=1;

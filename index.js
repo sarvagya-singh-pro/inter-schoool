@@ -1,18 +1,19 @@
-barba.init({
-    transitions: [{
-      name: 'fade-transition',
-      async leave(data) {
-        const done = this.async();
-        await gsap.to('.extension', { width:"100%", duration: 0.5 });
-        done();
-      },
-      async enter(data) {
 
-        await gsap.from(data.next.container, { opacity: 0, duration: 0.5 });
-   
-      }
-    }]
-  });
+// barba.init({
+//   transitions: [{
+//     name: 'fade-transition',
+//     async leave(data) {
+//       const done = this.async();
+//       await gsap.to('.extension', { width:"100%", duration: 0.5 });
+//       done();
+//     },
+//     async enter(data) {
+
+//       await gsap.from(data.next.container, { opacity: 0, duration: 0.5 });
+ 
+//     }
+//   }]
+// });
 
   const states=[0,0,0]
   document.querySelector('.menu').addEventListener('click',()=>{
