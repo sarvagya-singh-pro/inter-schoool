@@ -1,0 +1,32 @@
+body{
+    background: aliceblue;
+}
+.faqHeading{
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+p{
+    font-size: 1rem;
+    color: #4b4b4b;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
